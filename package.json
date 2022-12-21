@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "css": "npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch",
     "types": "npx supabase gen types typescript --local > ./src/database.types.ts",
-    "supbase:run": "npx supabase start"
+    "supabase:run": "npx supabase stop && npx supabase start"
   },
   "dependencies": {
     "@supabase/auth-ui-react": "^0.2.6",
